@@ -125,12 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
         downloadBtn.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // Create a simple PDF-like content alert
-            // In production, this would link to an actual PDF file
-            alert(currentLang === 'fr'
-                ? 'La présentation sera bientôt disponible. Pour plus d\'informations, contactez-nous à contact@terraconnect.ai'
-                : 'The presentation will be available soon. For more information, contact us at contact@terraconnect.ai'
-            );
+            showPopup('info', {
+                fr: 'La présentation sera bientôt disponible. Pour plus d\'informations, <a href="#contact-form" class="popup-link">contactez-nous</a>.',
+                en: 'The presentation will be available soon. For more information, <a href="#contact-form" class="popup-link">contact us</a>.'
+            });
 
             // Uncomment when PDF is ready:
             // window.open('presentation.pdf', '_blank');
@@ -277,9 +275,22 @@ function showPopup(type, messages) {
     var msg = document.getElementById('popupMessage');
     var lang = window.currentLang || 'en';
 
-    icon.textContent = type === 'success' ? '✅' : '❌';
-    msg.textContent = messages[lang] || messages['en'];
+    if (type === 'success') {
+        icon.textContent = '✅';
+    } else if (type === 'error') {
+        icon.textContent = '❌';
+    } else {
+        icon.textContent = 'ℹ️';
+    }
+    msg.innerHTML = messages[lang] || messages['en'];
     modal.classList.add('active');
+
+    // Handle click on links inside popup
+    msg.querySelectorAll('a.popup-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+            modal.classList.remove('active');
+        });
+    });
 }
 
 $(document).ready(function() {

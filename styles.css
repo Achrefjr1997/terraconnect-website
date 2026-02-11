@@ -1497,3 +1497,14 @@ img {
     min-width: 120px;
     cursor: pointer;
 }
+
+.popup-link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.popup-link:hover {
+    color: var(--color-primary-dark);
+}
