@@ -126,12 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             showPopup('info', {
-                fr: 'La présentation sera bientôt disponible. Pour plus d\'informations, <a href="#contact-form" class="popup-link">contactez-nous</a>.',
-                en: 'The presentation will be available soon. For more information, <a href="#contact-form" class="popup-link">contact us</a>.'
+                fr: 'Pour recevoir notre présentation, veuillez nous <a href="#contact-form" class="popup-link">contacter via le formulaire</a>.',
+                en: 'To receive our presentation, please <a href="#contact-form" class="popup-link">contact us via the form</a>.'
             });
-
-            // Uncomment when PDF is ready:
-            // window.open('presentation.pdf', '_blank');
         });
     }
 
