@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // LANGUAGE TOGGLE FUNCTIONALITY
     // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    let currentLang = 'en';
+    window.currentLang = 'en';
     const langToggle = document.getElementById('langToggle');
 
     // Initialize with English content on page load
@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (langToggle) {
         langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'fr' ? 'en' : 'fr';
-            langToggle.textContent = currentLang === 'fr' ? 'EN' : 'FR';
-            setLanguage(currentLang);
+            window.currentLang = window.currentLang === 'fr' ? 'en' : 'fr';
+            langToggle.textContent = window.currentLang === 'fr' ? 'EN' : 'FR';
+            setLanguage(window.currentLang);
         });
     }
 
@@ -245,16 +245,25 @@ $(document).ready(function() {
         })
         .then(function(response) {
             if (response.ok) {
-                showPopup('success', 'Merci pour votre message ! Nous vous contacterons bientôt.');
+                showPopup('success', {
+                    fr: 'Merci pour votre message ! Nous vous contacterons bientôt.',
+                    en: 'Thank you for your message! We will contact you soon.'
+                });
                 form[0].reset();
             } else {
                 return response.json().then(function(data) {
-                    showPopup('error', 'Erreur : ' + (data.error || 'Veuillez réessayer.'));
+                    showPopup('error', {
+                        fr: 'Erreur : ' + (data.error || 'Veuillez réessayer.'),
+                        en: 'Error: ' + (data.error || 'Please try again.')
+                    });
                 });
             }
         })
         .catch(function(error) {
-            showPopup('error', 'Une erreur réseau s\'est produite. Veuillez réessayer.');
+            showPopup('error', {
+                fr: 'Une erreur réseau s\'est produite. Veuillez réessayer.',
+                en: 'A network error occurred. Please try again.'
+            });
         });
     });
 });
@@ -262,13 +271,14 @@ $(document).ready(function() {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // CUSTOM POPUP MODAL
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-function showPopup(type, message) {
+function showPopup(type, messages) {
     var modal = document.getElementById('popupModal');
     var icon = document.getElementById('popupIcon');
     var msg = document.getElementById('popupMessage');
+    var lang = window.currentLang || 'en';
 
     icon.textContent = type === 'success' ? '✅' : '❌';
-    msg.textContent = message;
+    msg.textContent = messages[lang] || messages['en'];
     modal.classList.add('active');
 }
 
