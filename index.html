@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraConnect - L'Intelligence Géospatiale pour Tous</title>
+    <meta name="description"
+        content="TerraConnect transforme les données satellites en décisions simples et actionnables pour l'agriculture et les villes intelligentes grâce à l'IA.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/icons/logo.jpg" alt="TerraConnect" class="logo" />
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" data-lang-fr="Accueil" data-lang-en="Home">Home</a></li>
+                <li><a href="#problem" data-lang-fr="Défis" data-lang-en="Challenges">Challenges</a></li>
+                <li><a href="#solution" data-lang-fr="Solution" data-lang-en="Solution">Solution</a></li>
+                <li><a href="#usecases" data-lang-fr="Cas d'Usage" data-lang-en="Use Cases">Use Cases</a></li>
+                <li><a href="#impact" data-lang-fr="Impact" data-lang-en="Impact">Impact</a></li>
+                <li><a href="#team" data-lang-fr="Équipe" data-lang-en="Team">Team</a></li>
+                <li><a href="#vision" data-lang-fr="Vision" data-lang-en="Vision">Vision</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">FR</button>
+                <a href="#contact" class="btn btn-primary-nav" data-lang-fr="Contact" data-lang-en="Contact">Contact</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title fade-in" data-lang-fr="TerraConnect : L'Intelligence Géospatiale pour Tous"
+                data-lang-en="TerraConnect: Geospatial Intelligence for Everyone">
+                TerraConnect : L'Intelligence Géospatiale pour Tous
+            </h1>
+            <p class="hero-subtitle fade-in"
+                data-lang-fr="Nous transformons les données satellites en décisions simples et actionnables pour l'agriculture et les villes intelligentes."
+                data-lang-en="We transform satellite data into simple, actionable decisions for agriculture and smart cities.">
+                Nous transformons les données satellites en décisions simples et actionnables pour l'agriculture et les
+                villes intelligentes.
+            </p>
+            <p class="hero-description fade-in"
+                data-lang-fr="TerraConnect est une plateforme d'intelligence géospatiale nouvelle génération. Grâce à l'IA et à l'imagerie satellite, nous rendons accessible à tous - agriculteurs, urbanistes, services d'urgence - une technologie autrefois réservée aux experts."
+                data-lang-en="TerraConnect is a next-generation geospatial intelligence platform. Through AI and satellite imagery, we make technology once reserved for experts accessible to everyone - farmers, urban planners, emergency services.">
+                TerraConnect est une plateforme d'intelligence géospatiale nouvelle génération. Grâce à l'IA et à
+                l'imagerie satellite, nous rendons accessible à tous - agriculteurs, urbanistes, services d'urgence -
+                une technologie autrefois réservée aux experts.
+            </p>
+
+            <div class="stats-grid fade-in">
+                <div class="stat-card">
+                    <div class="stat-number">Minutes</div>
+                    <div class="stat-label" data-lang-fr="pour décider (vs des mois avant)"
+                        data-lang-en="to decide (vs months before)">pour décider (vs des mois avant)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label" data-lang-fr="de l'eau mondiale gaspillée en agriculture"
+                        data-lang-en="of global water wasted in agriculture">de l'eau mondiale gaspillée en agriculture
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Milliards €</div>
+                    <div class="stat-label" data-lang-fr="de pertes évitables chaque année"
+                        data-lang-en="of preventable losses annually">de pertes évitables chaque année</div>
+                </div>
+            </div>
+
+            <div class="cta-buttons fade-in">
+                <a href="#solution" class="btn btn-primary" data-lang-fr="Découvrir le projet"
+                    data-lang-en="Discover the project">Découvrir le projet</a>
+                <a href="#contact" class="btn btn-secondary" data-lang-fr="Nous contacter"
+                    data-lang-en="Contact us">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section problem-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Les Défis d'Aujourd'hui" data-lang-en="Today's Challenges">Les Défis
+                d'Aujourd'hui</h2>
+
+            <div class="problem-grid">
+                <div class="problem-card fade-in-scroll">
+                    <div class="problem-icon">🌾</div>
+                    <h3 data-lang-fr="En Agriculture" data-lang-en="In Agriculture">En Agriculture</h3>
+                    <p class="problem-intro" data-lang-fr="Les agriculteurs font face à des défis invisibles"
+                        data-lang-en="Farmers face invisible challenges">Les agriculteurs font face à des défis
+                        invisibles</p>
+                    <ul>
+                        <li data-lang-fr="Gaspillage massif d'eau (60% de l'eau mondiale)"
+                            data-lang-en="Massive water waste (60% of global water)">Gaspillage massif d'eau (60% de
+                            l'eau mondiale)</li>
+                        <li data-lang-fr="Détection tardive des maladies des cultures"
+                            data-lang-en="Late detection of crop diseases">Détection tardive des maladies des cultures
+                        </li>
+                        <li data-lang-fr="Impossibilité de voir l'érosion des sols"
+                            data-lang-en="Inability to see soil erosion">Impossibilité de voir l'érosion des sols</li>
+                        <li data-lang-fr="Incapacité à anticiper les risques climatiques"
+                            data-lang-en="Inability to anticipate climate risks">Incapacité à anticiper les risques
+                            climatiques</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card fade-in-scroll">
+                    <div class="problem-icon">🏙️</div>
+                    <h3 data-lang-fr="En Urbanisme" data-lang-en="In Urban Planning">En Urbanisme</h3>
+                    <p class="problem-intro" data-lang-fr="Les villes réagissent au lieu d'anticiper"
+                        data-lang-en="Cities react instead of anticipating">Les villes réagissent au lieu d'anticiper
+                    </p>
+                    <ul>
+                        <li data-lang-fr="Îlots de chaleur urbains non identifiés"
+                            data-lang-en="Unidentified urban heat islands">Îlots de chaleur urbains non identifiés</li>
+                        <li data-lang-fr="Plans d'urbanisme sans données terrain concrètes"
+                            data-lang-en="Urban plans without concrete field data">Plans d'urbanisme sans données
+                            terrain concrètes</li>
+                        <li data-lang-fr="Gestion des inondations après les dégâts"
+                            data-lang-en="Flood management after damage">Gestion des inondations après les dégâts</li>
+                        <li data-lang-fr="Allocation d'urgence inefficace"
+                            data-lang-en="Inefficient emergency allocation">Allocation d'urgence inefficace</li>
+                    </ul>
+                </div>
+
+                <div class="problem-card fade-in-scroll">
+                    <div class="problem-icon">💻</div>
+                    <h3 data-lang-fr="Barrière Technologique" data-lang-en="Technology Barrier">Barrière Technologique
+                    </h3>
+                    <p class="problem-intro" data-lang-fr="Les outils géospatiaux sont inaccessibles"
+                        data-lang-en="Geospatial tools are inaccessible">Les outils géospatiaux sont inaccessibles</p>
+                    <ul>
+                        <li data-lang-fr="Licences coûteuses (jusqu'à 10 000€/an)"
+                            data-lang-en="Expensive licenses (up to €10,000/year)">Licences coûteuses (jusqu'à 10
+                            000€/an)</li>
+                        <li data-lang-fr="Nécessitent une expertise technique avancée"
+                            data-lang-en="Require advanced technical expertise">Nécessitent une expertise technique
+                            avancée</li>
+                        <li data-lang-fr="Interfaces complexes inadaptées"
+                            data-lang-en="Complex, unsuitable interfaces">Interfaces complexes inadaptées</li>
+                        <li data-lang-fr="Question simple = processus compliqué"
+                            data-lang-en="Simple question = complicated process">Question simple = processus compliqué
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="transition-message fade-in-scroll">
+                <p data-lang-fr="Et si poser une question simple donnait une réponse claire et immédiate ?"
+                    data-lang-en="What if asking a simple question gave a clear and immediate answer?">
+                    Et si poser une question simple donnait une réponse claire et immédiate ?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section solution-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Une Plateforme Simple et Intelligente"
+                data-lang-en="A Simple and Intelligent Platform">Une Plateforme Simple et Intelligente</h2>
+
+            <div class="solution-flow fade-in-scroll">
+                <div class="flow-card flow-question">
+                    <h3 data-lang-fr="Posez votre question en langage naturel"
+                        data-lang-en="Ask your question in natural language">Posez votre question en langage naturel
+                    </h3>
+                    <div class="question-examples">
+                        <p data-lang-fr="« Où sont les zones à risque d'inondation cette semaine ? »"
+                            data-lang-en="'Where are the flood risk areas this week?'">"Où sont les zones à risque
+                            d'inondation cette semaine ?"</p>
+                        <p data-lang-fr="« Quelles parcelles ont besoin d'irrigation ? »"
+                            data-lang-en="'Which parcels need irrigation?'">"Quelles parcelles ont besoin d'irrigation
+                            ?"</p>
+                        <p data-lang-fr="« Où prioriser les interventions d'urgence ? »"
+                            data-lang-en="'Where to prioritize emergency interventions?'">"Où prioriser les
+                            interventions d'urgence ?"</p>
+                    </div>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-card flow-process">
+                    <h3 data-lang-fr="TerraConnect analyse" data-lang-en="TerraConnect analyzes">TerraConnect analyse
+                    </h3>
+                    <p data-lang-fr="Satellites + IA + Données" data-lang-en="Satellites + AI + Data">Satellites + IA +
+                        Données</p>
+                </div>
+
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-card flow-answer">
+                    <h3 data-lang-fr="Réponse visuelle instantanée" data-lang-en="Instant visual response">Réponse
+                        visuelle instantanée</h3>
+                    <ul>
+                        <li data-lang-fr="Carte interactive colorée" data-lang-en="Colorful interactive map">Carte
+                            interactive colorée</li>
+                        <li data-lang-fr="Zones de risque identifiées" data-lang-en="Identified risk zones">Zones de
+                            risque identifiées</li>
+                        <li data-lang-fr="Recommandations actionnables" data-lang-en="Actionable recommendations">
+                            Recommandations actionnables</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="subsection-title fade-in-scroll" data-lang-fr="Comment ça fonctionne"
+                data-lang-en="How it works">Comment ça fonctionne</h3>
+            <div class="steps-grid fade-in-scroll">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4 data-lang-fr="Vous Demandez" data-lang-en="You Ask">Vous Demandez</h4>
+                    <p data-lang-fr="Interface simple en langage naturel. Aucune expertise technique requise."
+                        data-lang-en="Simple natural language interface. No technical expertise required.">Interface
+                        simple en langage naturel. Aucune expertise technique requise.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4 data-lang-fr="Notre IA Analyse" data-lang-en="Our AI Analyzes">Notre IA Analyse</h4>
+                    <p data-lang-fr="Imagerie satellite Sentinel-2, données météo, terrain, historique. Intelligence artificielle multi-agents."
+                        data-lang-en="Sentinel-2 satellite imagery, weather, terrain, historical data. Multi-agent artificial intelligence.">
+                        Imagerie satellite Sentinel-2, données météo, terrain, historique. Intelligence artificielle
+                        multi-agents.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4 data-lang-fr="Vous Agissez" data-lang-en="You Act">Vous Agissez</h4>
+                    <p data-lang-fr="Cartes visuelles claires, alertes automatiques, recommandations précises."
+                        data-lang-en="Clear visual maps, automatic alerts, precise recommendations.">Cartes visuelles
+                        claires, alertes automatiques, recommandations précises.</p>
+                </div>
+            </div>
+
+            <div class="differentiation-box fade-in-scroll">
+                <h4 data-lang-fr="Notre Différence" data-lang-en="Our Difference">Notre Différence</h4>
+                <ul class="differentiation-list">
+                    <li>✅ <span data-lang-fr="Interface en langage naturel (pas de jargon technique)"
+                            data-lang-en="Natural language interface (no technical jargon)">Interface en langage naturel
+                            (pas de jargon technique)</span></li>
+                    <li>✅ <span data-lang-fr="Décisions en minutes (pas en mois)"
+                            data-lang-en="Decisions in minutes (not months)">Décisions en minutes (pas en mois)</span>
+                    </li>
+                    <li>✅ <span data-lang-fr="Prix accessible (pas des milliers d'euros)"
+                            data-lang-en="Affordable pricing (not thousands of euros)">Prix accessible (pas des milliers
+                            d'euros)</span></li>
+                    <li>✅ <span data-lang-fr="Multi-domaines (agriculture + villes sur une seule plateforme)"
+                            data-lang-en="Multi-domain (agriculture + cities on one platform)">Multi-domaines
+                            (agriculture + villes sur une seule plateforme)</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="usecases" class="section usecases-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Des Solutions Concrètes pour des Défis Réels"
+                data-lang-en="Concrete Solutions for Real Challenges">Des Solutions Concrètes pour des Défis Réels</h2>
+
+            <div class="usecases-grid">
+                <div class="usecase-card fade-in-scroll">
+                    <div class="usecase-icon">💧</div>
+                    <h3 data-lang-fr="Prévention des Inondations" data-lang-en="Flood Prevention">Prévention des
+                        Inondations</h3>
+                    <p class="usecase-tagline"
+                        data-lang-fr="Anticipez les risques d'inondation avant qu'ils surviennent"
+                        data-lang-en="Anticipate flood risks before they occur">Anticipez les risques d'inondation avant
+                        qu'ils surviennent</p>
+
+                    <img src="assets/usecases/Flood Prevention.png" alt="Flood Risk Map" class="usecase-visual" />
+
+                    <div class="usecase-details">
+                        <p class="usecase-for"><strong data-lang-fr="Pour qui :" data-lang-en="For whom:">Pour qui
+                                :</strong> <span
+                                data-lang-fr="Municipalités, services d'urgence, planificateurs urbains"
+                                data-lang-en="Municipalities, emergency services, urban planners">Municipalités,
+                                services d'urgence, planificateurs urbains</span></p>
+
+                        <p class="usecase-what"><strong data-lang-fr="Ce que ça fait :" data-lang-en="What it does:">Ce
+                                que ça fait :</strong></p>
+                        <ul>
+                            <li data-lang-fr="Identifie les zones à risque en temps réel"
+                                data-lang-en="Identifies risk areas in real-time">Identifie les zones à risque en temps
+                                réel</li>
+                            <li data-lang-fr="Génère des cartes de risque colorées"
+                                data-lang-en="Generates colorful risk maps">Génère des cartes de risque colorées</li>
+                            <li data-lang-fr="Alerte automatiquement les services concernés"
+                                data-lang-en="Automatically alerts relevant services">Alerte automatiquement les
+                                services concernés</li>
+                        </ul>
+
+                        <p class="usecase-impact"><strong data-lang-fr="Impact :" data-lang-en="Impact:">Impact
+                                :</strong></p>
+                        <ul class="impact-list">
+                            <li>✅ <span data-lang-fr="Évacuations anticipées"
+                                    data-lang-en="Anticipated evacuations">Évacuations anticipées</span></li>
+                            <li>✅ <span data-lang-fr="Réduction des dommages matériels"
+                                    data-lang-en="Reduced property damage">Réduction des dommages matériels</span></li>
+                            <li>✅ <span data-lang-fr="Meilleure allocation des ressources"
+                                    data-lang-en="Better resource allocation">Meilleure allocation des ressources</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="usecase-card fade-in-scroll">
+                    <div class="usecase-icon">🌾</div>
+                    <h3 data-lang-fr="Gestion Intelligente de l'Eau Agricole"
+                        data-lang-en="Smart Agricultural Water Management">Gestion Intelligente de l'Eau Agricole</h3>
+                    <p class="usecase-tagline" data-lang-fr="Économisez l'eau et améliorez vos rendements"
+                        data-lang-en="Save water and improve your yields">Économisez l'eau et améliorez vos rendements
+                    </p>
+
+                    <img src="assets/usecases/Smart Agricultural.png" alt="Agricultural Water Management Map"
+                        class="usecase-visual" />
+
+                    <div class="usecase-details">
+                        <p class="usecase-for"><strong data-lang-fr="Pour qui :" data-lang-en="For whom:">Pour qui
+                                :</strong> <span data-lang-fr="Agriculteurs, coopératives agricoles, agronomes"
+                                data-lang-en="Farmers, agricultural cooperatives, agronomists">Agriculteurs,
+                                coopératives agricoles, agronomes</span></p>
+
+                        <p class="usecase-what"><strong data-lang-fr="Ce que ça fait :" data-lang-en="What it does:">Ce
+                                que ça fait :</strong></p>
+                        <ul>
+                            <li data-lang-fr="Recommandations d'irrigation personnalisées"
+                                data-lang-en="Personalized irrigation recommendations">Recommandations d'irrigation
+                                personnalisées</li>
+                            <li data-lang-fr="Détection précoce du stress hydrique"
+                                data-lang-en="Early detection of water stress">Détection précoce du stress hydrique</li>
+                            <li data-lang-fr="Analyse de la santé des sols" data-lang-en="Soil health analysis">Analyse
+                                de la santé des sols</li>
+                        </ul>
+
+                        <p class="usecase-impact"><strong data-lang-fr="Impact :" data-lang-en="Impact:">Impact
+                                :</strong></p>
+                        <ul class="impact-list">
+                            <li>✅ <span data-lang-fr="Économie de 30-50% d'eau"
+                                    data-lang-en="30-50% water savings">Économie de 30-50% d'eau</span></li>
+                            <li>✅ <span data-lang-fr="Détection précoce des problèmes"
+                                    data-lang-en="Early problem detection">Détection précoce des problèmes</span></li>
+                            <li>✅ <span data-lang-fr="Amélioration des rendements"
+                                    data-lang-en="Improved yields">Amélioration des rendements</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="usecase-card fade-in-scroll">
+                    <div class="usecase-icon">🔥</div>
+                    <h3 data-lang-fr="Surveillance Incendies et Risques Climatiques"
+                        data-lang-en="Fire and Climate Risk Monitoring">Surveillance Incendies et Risques Climatiques
+                    </h3>
+                    <p class="usecase-tagline" data-lang-fr="Détectez les risques avant qu'il soit trop tard"
+                        data-lang-en="Detect risks before it's too late">Détectez les risques avant qu'il soit trop tard
+                    </p>
+
+                    <img src="assets/usecases/Fire and Climate Risk Monitoring.png" alt="Fire Risk Heatmap"
+                        class="usecase-visual" />
+
+                    <div class="usecase-details">
+                        <p class="usecase-for"><strong data-lang-fr="Pour qui :" data-lang-en="For whom:">Pour qui
+                                :</strong> <span
+                                data-lang-fr="Services forestiers, pompiers, gestionnaires de territoires"
+                                data-lang-en="Forest services, firefighters, land managers">Services forestiers,
+                                pompiers, gestionnaires de territoires</span></p>
+
+                        <p class="usecase-what"><strong data-lang-fr="Ce que ça fait :" data-lang-en="What it does:">Ce
+                                que ça fait :</strong></p>
+                        <ul>
+                            <li data-lang-fr="Surveillance temps réel de la végétation"
+                                data-lang-en="Real-time vegetation monitoring">Surveillance temps réel de la végétation
+                            </li>
+                            <li data-lang-fr="Calcul de probabilité d'incendie"
+                                data-lang-en="Fire probability calculation">Calcul de probabilité d'incendie</li>
+                            <li data-lang-fr="Priorisation automatique des interventions"
+                                data-lang-en="Automatic intervention prioritization">Priorisation automatique des
+                                interventions</li>
+                        </ul>
+
+                        <p class="usecase-impact"><strong data-lang-fr="Impact :" data-lang-en="Impact:">Impact
+                                :</strong></p>
+                        <ul class="impact-list">
+                            <li>✅ <span data-lang-fr="Détection précoce des zones à risque"
+                                    data-lang-en="Early detection of risk zones">Détection précoce des zones à
+                                    risque</span></li>
+                            <li>✅ <span data-lang-fr="Protection des actifs agricoles"
+                                    data-lang-en="Protection of agricultural assets">Protection des actifs
+                                    agricoles</span></li>
+                            <li>✅ <span data-lang-fr="Priorisation stratégique"
+                                    data-lang-en="Strategic prioritization">Priorisation stratégique</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section impact-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Au-Delà de la Technologie : Un Impact Réel"
+                data-lang-en="Beyond Technology: Real Impact">Au-Delà de la Technologie : Un Impact Réel</h2>
+
+            <div class="impact-grid">
+                <div class="impact-card fade-in-scroll">
+                    <div class="impact-icon">🌍</div>
+                    <h3 data-lang-fr="Impact Environnemental" data-lang-en="Environmental Impact">Impact Environnemental
+                    </h3>
+                    <p class="impact-tagline" data-lang-fr="Préserver nos ressources vitales"
+                        data-lang-en="Preserve our vital resources">Préserver nos ressources vitales</p>
+                    <ul>
+                        <li data-lang-fr="Réduction massive du gaspillage d'eau"
+                            data-lang-en="Massive reduction in water waste">Réduction massive du gaspillage d'eau</li>
+                        <li data-lang-fr="Protection des sols agricoles" data-lang-en="Agricultural soil protection">
+                            Protection des sols agricoles</li>
+                        <li data-lang-fr="Adaptation au changement climatique" data-lang-en="Climate change adaptation">
+                            Adaptation au changement climatique</li>
+                        <li data-lang-fr="Gestion durable des territoires" data-lang-en="Sustainable land management">
+                            Gestion durable des territoires</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card fade-in-scroll">
+                    <div class="impact-icon">⚡</div>
+                    <h3 data-lang-fr="Rapidité et Efficacité" data-lang-en="Speed and Efficiency">Rapidité et Efficacité
+                    </h3>
+                    <p class="impact-tagline" data-lang-fr="Décider en minutes, pas en mois"
+                        data-lang-en="Decide in minutes, not months">Décider en minutes, pas en mois</p>
+                    <ul>
+                        <li data-lang-fr="Analyses instantanées" data-lang-en="Instant analyses">Analyses instantanées
+                        </li>
+                        <li data-lang-fr="Alertes en temps réel" data-lang-en="Real-time alerts">Alertes en temps réel
+                        </li>
+                        <li data-lang-fr="Priorisation automatique" data-lang-en="Automatic prioritization">Priorisation
+                            automatique</li>
+                        <li data-lang-fr="Actions immédiates possibles" data-lang-en="Immediate actions possible">
+                            Actions immédiates possibles</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card fade-in-scroll">
+                    <div class="impact-icon">💰</div>
+                    <h3 data-lang-fr="Accessibilité Économique" data-lang-en="Economic Accessibility">Accessibilité
+                        Économique</h3>
+                    <p class="impact-tagline" data-lang-fr="La technologie d'élite pour tous"
+                        data-lang-en="Elite technology for everyone">La technologie d'élite pour tous</p>
+                    <ul>
+                        <li data-lang-fr="Prix abordable vs outils traditionnels"
+                            data-lang-en="Affordable pricing vs traditional tools">Prix abordable vs outils
+                            traditionnels</li>
+                        <li data-lang-fr="Aucune formation complexe requise"
+                            data-lang-en="No complex training required">Aucune formation complexe requise</li>
+                        <li data-lang-fr="Retour sur investissement rapide" data-lang-en="Quick return on investment">
+                            Retour sur investissement rapide</li>
+                        <li data-lang-fr="Économies mesurables immédiatement"
+                            data-lang-en="Immediately measurable savings">Économies mesurables immédiatement</li>
+                    </ul>
+                </div>
+
+                <div class="impact-card fade-in-scroll">
+                    <div class="impact-icon">👥</div>
+                    <h3 data-lang-fr="Impact Social" data-lang-en="Social Impact">Impact Social</h3>
+                    <p class="impact-tagline" data-lang-fr="Protéger les communautés"
+                        data-lang-en="Protect communities">Protéger les communautés</p>
+                    <ul>
+                        <li data-lang-fr="Vies sauvées (évacuations préventives)"
+                            data-lang-en="Lives saved (preventive evacuations)">Vies sauvées (évacuations préventives)
+                        </li>
+                        <li data-lang-fr="Sécurité alimentaire améliorée" data-lang-en="Improved food security">Sécurité
+                            alimentaire améliorée</li>
+                        <li data-lang-fr="Résilience des territoires" data-lang-en="Territorial resilience">Résilience
+                            des territoires</li>
+                        <li data-lang-fr="Démocratisation de l'information"
+                            data-lang-en="Democratization of information">Démocratisation de l'information</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="central-message fade-in-scroll">
+                <p data-lang-fr="TerraConnect rend l'intelligence géospatiale accessible à ceux qui en ont le plus besoin : les agriculteurs qui nourrissent le monde, les urbanistes qui protègent les citoyens, et les services d'urgence qui sauvent des vies."
+                    data-lang-en="TerraConnect makes geospatial intelligence accessible to those who need it most: farmers who feed the world, urban planners who protect citizens, and emergency services that save lives.">
+                    TerraConnect rend l'intelligence géospatiale accessible à ceux qui en ont le plus besoin : les
+                    agriculteurs qui nourrissent le monde, les urbanistes qui protègent les citoyens, et les services
+                    d'urgence qui sauvent des vies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Une Équipe Fondatrice Expérimentée et Complémentaire"
+                data-lang-en="An Experienced and Complementary Founding Team">Une Équipe Fondatrice Expérimentée et
+                Complémentaire</h2>
+            <p class="section-subtitle"
+                data-lang-fr="4 experts avec 16+ années d'expérience combinée en géomatique, IA et ingénierie"
+                data-lang-en="4 experts with 16+ years of combined experience in geomatics, AI, and engineering">4
+                experts avec 16+ années d'expérience combinée en géomatique, IA et ingénierie</p>
+
+            <div class="team-grid">
+                <div class="team-card fade-in-scroll">
+                    <div class="team-photo">
+                        <img src="assets/team/khalid.jpg" alt="Khaled Hammami" class="team-photo-img" />
+                    </div>
+                    <div class="team-info">
+                        <h3>Khaled Hammami</h3>
+                        <p class="team-role" data-lang-fr="CEO & Co-Fondateur" data-lang-en="CEO & Co-Founder">CEO &
+                            Co-Fondateur</p>
+                        <p class="team-education">🎓 <span data-lang-fr="Ingénieur en Géomatique"
+                                data-lang-en="Geomatics Engineer">Ingénieur en Géomatique</span></p>
+                        <p class="team-experience"
+                            data-lang-fr="💼 4+ ans d'expérience en GIS et Gestion de Données Géospatiales"
+                            data-lang-en="💼 4+ years of experience in GIS and Geospatial Data Management">💼 4+ ans
+                            d'expérience en GIS et Gestion de Données Géospatiales</p>
+
+                        <div class="team-expertise">
+                            <p class="expertise-title" data-lang-fr="Expertise :" data-lang-en="Expertise:">Expertise :
+                            </p>
+                            <ul>
+                                <li data-lang-fr="Systèmes d'Information Géographique"
+                                    data-lang-en="Geographic Information Systems">Systèmes d'Information Géographique
+                                </li>
+                                <li data-lang-fr="Architecture de données spatiales"
+                                    data-lang-en="Spatial data architecture">Architecture de données spatiales</li>
+                                <li data-lang-fr="Vision stratégique et leadership"
+                                    data-lang-en="Strategic vision and leadership">Vision stratégique et leadership</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/khaled-hammami/" target="_blank" rel="noopener noreferrer"
+                            class="linkedin-link" aria-label="LinkedIn profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card fade-in-scroll">
+                    <div class="team-photo">
+                        <img src="assets/team/achref.jpg" alt="Achref Jarray" class="team-photo-img" />
+                    </div>
+                    <div class="team-info">
+                        <h3>Achref Jarray</h3>
+                        <p class="team-role" data-lang-fr="Responsable IA & Co-Fondateur"
+                            data-lang-en="AI Lead & Co-Founder">Responsable IA & Co-Fondateur</p>
+                        <p class="team-education">🎓 <span data-lang-fr="Lead IA @ Perf-analysis consulting"
+                                data-lang-en="AI Lead @ Perf-analysis consulting">Lead IA @ Perf-analysis
+                                consulting</span></p>
+                        <p class="team-education">🎓 <span data-lang-fr="Doctorant en IA & Computer Vision"
+                                data-lang-en="PhD Candidate in AI & Computer Vision">Doctorant en IA & Computer
+                                Vision</span></p>
+                        <p class="team-experience" data-lang-fr="💼 4+ ans d'expérience en IA et Computer Vision"
+                            data-lang-en="💼 4+ years of experience in AI and Computer Vision">💼 4+ ans d'expérience en
+                            IA et Computer Vision</p>
+
+                        <div class="team-expertise">
+                            <p class="expertise-title" data-lang-fr="Expertise :" data-lang-en="Expertise:">Expertise :
+                            </p>
+                            <ul>
+                                <li data-lang-fr="Intelligence Artificielle" data-lang-en="Artificial Intelligence">
+                                    Intelligence Artificielle</li>
+                                <li data-lang-fr="Computer Vision (imagerie satellite)"
+                                    data-lang-en="Computer Vision (satellite imagery)">Computer Vision (imagerie
+                                    satellite)</li>
+                                <li data-lang-fr="Machine Learning & Deep Learning"
+                                    data-lang-en="Machine Learning & Deep Learning">Machine Learning & Deep Learning
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/achrefjarray/" target="_blank" rel="noopener noreferrer"
+                            class="linkedin-link" aria-label="LinkedIn profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card fade-in-scroll">
+                    <div class="team-photo">
+                        <img src="assets/team/mahmoud.jpg" alt="Mahmoud Nagati" class="team-photo-img" />
+                    </div>
+                    <div class="team-info">
+                        <h3>Mahmoud Nagati</h3>
+                        <p class="team-role" data-lang-fr="CTO & Co-Fondateur" data-lang-en="CTO & Co-Founder">CTO &
+                            Co-Fondateur</p>
+                        <p class="team-education">🎓 <span data-lang-fr="Ingénieur IT"
+                                data-lang-en="IT Engineer">Ingénieur IT</span></p>
+                        <p class="team-education">🎓 <span data-lang-fr="Doctorant en Cybersécurité"
+                                data-lang-en="PhD Candidate in Cybersecurity">Doctorant en Cybersécurité</span></p>
+                        <p class="team-experience" data-lang-fr="💼 4+ ans d'expérience en Cloud & DevOps"
+                            data-lang-en="💼 4+ years of experience in Cloud & DevOps">💼 4+ ans d'expérience en Cloud &
+                            DevOps</p>
+
+                        <div class="team-expertise">
+                            <p class="expertise-title" data-lang-fr="Expertise :" data-lang-en="Expertise:">Expertise :
+                            </p>
+                            <ul>
+                                <li data-lang-fr="Architecture Cloud (AWS/GCP)"
+                                    data-lang-en="Cloud Architecture (AWS/GCP)">Architecture Cloud (AWS/GCP)</li>
+                                <li data-lang-fr="DevOps & Infrastructure" data-lang-en="DevOps & Infrastructure">DevOps
+                                    & Infrastructure</li>
+                                <li data-lang-fr="Cybersécurité & Conformité" data-lang-en="Cybersecurity & Compliance">
+                                    Cybersécurité & Conformité</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/mahmoud-nagati-37b939199/" target="_blank"
+                            rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card fade-in-scroll">
+                    <div class="team-photo">
+                        <img src="assets/team/khalil.jpg" alt="Khalil Mansour" class="team-photo-img" />
+                    </div>
+                    <div class="team-info">
+                        <h3>Khalil Mansour</h3>
+                        <p class="team-role" data-lang-fr="Responsable Développement Web/Mobile & Co-Fondateur"
+                            data-lang-en="Web/Mobile Development Lead & Co-Founder">Responsable Développement Web/Mobile
+                            & Co-Fondateur</p>
+                        <p class="team-education">🎓 <span data-lang-fr="Ingénieur en Géomatique"
+                                data-lang-en="Geomatics Engineer">Ingénieur en Géomatique</span></p>
+                        <p class="team-experience"
+                            data-lang-fr="💼 4+ ans d'expérience en développement d'applications GIS Web/Mobile"
+                            data-lang-en="💼 4+ years of experience in GIS Web/Mobile application development">💼 4+ ans
+                            d'expérience en développement d'applications GIS Web/Mobile</p>
+
+                        <div class="team-expertise">
+                            <p class="expertise-title" data-lang-fr="Expertise :" data-lang-en="Expertise:">Expertise :
+                            </p>
+                            <ul>
+                                <li data-lang-fr="Applications géospatiales web/mobile"
+                                    data-lang-en="Geospatial web/mobile applications">Applications géospatiales
+                                    web/mobile</li>
+                                <li data-lang-fr="Interfaces utilisateur (UX/UI)"
+                                    data-lang-en="User interfaces (UX/UI)">Interfaces utilisateur (UX/UI)</li>
+                                <li data-lang-fr="Cartographie interactive" data-lang-en="Interactive mapping">
+                                    Cartographie interactive</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://www.linkedin.com/in/khalil-mansour-509a44232/" target="_blank"
+                            rel="noopener noreferrer" class="linkedin-link" aria-label="LinkedIn profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-strengths fade-in-scroll">
+                <h3 class="subsection-title" data-lang-fr="Une Combinaison Unique de Compétences"
+                    data-lang-en="A Unique Combination of Skills">Une Combinaison Unique de Compétences</h3>
+
+                <div class="strengths-grid">
+                    <div class="strength-card">
+                        <div class="strength-icon">🌍</div>
+                        <h4 data-lang-fr="Expertise Géospatiale" data-lang-en="Geospatial Expertise">Expertise
+                            Géospatiale</h4>
+                        <p data-lang-fr="2 ingénieurs en géomatique pour une compréhension profonde des données spatiales et des besoins métier"
+                            data-lang-en="2 geomatics engineers for deep understanding of spatial data and business needs">
+                            2 ingénieurs en géomatique pour une compréhension profonde des données spatiales et des
+                            besoins métier</p>
+                    </div>
+
+                    <div class="strength-card">
+                        <div class="strength-icon">🤖</div>
+                        <h4 data-lang-fr="Excellence IA" data-lang-en="AI Excellence">Excellence IA</h4>
+                        <p data-lang-fr="Lead IA avec doctorat en Computer Vision, maîtrise de l'analyse d'imagerie satellite par Deep Learning"
+                            data-lang-en="AI Lead with PhD in Computer Vision, mastery of satellite imagery analysis through Deep Learning">
+                            Lead IA avec doctorat en Computer Vision, maîtrise de l'analyse d'imagerie satellite par
+                            Deep Learning</p>
+                    </div>
+
+                    <div class="strength-card">
+                        <div class="strength-icon">☁️</div>
+                        <h4 data-lang-fr="Infrastructure Robuste" data-lang-en="Robust Infrastructure">Infrastructure
+                            Robuste</h4>
+                        <p data-lang-fr="CTO expert Cloud & DevOps garantissant scalabilité et sécurité de la plateforme"
+                            data-lang-en="CTO expert in Cloud & DevOps ensuring platform scalability and security">CTO
+                            expert Cloud & DevOps garantissant scalabilité et sécurité de la plateforme</p>
+                    </div>
+
+                    <div class="strength-card">
+                        <div class="strength-icon">💻</div>
+                        <h4 data-lang-fr="Développement de Pointe" data-lang-en="Cutting-Edge Development">Développement
+                            de Pointe</h4>
+                        <p data-lang-fr="Spécialiste applications GIS web/mobile pour une expérience utilisateur optimale"
+                            data-lang-en="GIS web/mobile applications specialist for optimal user experience">
+                            Spécialiste applications GIS web/mobile pour une expérience utilisateur optimale</p>
+                    </div>
+                </div>
+            </div>
+
+            <blockquote class="team-quote fade-in-scroll">
+                <p data-lang-fr="Notre équipe combine une expertise technique de pointe avec une compréhension profonde des défis réels de l'agriculture et de l'urbanisme. Nous ne construisons pas seulement une plateforme technologique - nous créons un outil qui répond aux besoins urgents de notre planète."
+                    data-lang-en="Our team combines cutting-edge technical expertise with a deep understanding of real challenges in agriculture and urban planning. We're not just building a technology platform - we're creating a tool that addresses the urgent needs of our planet.">
+                    "Notre équipe combine une expertise technique de pointe avec une compréhension profonde des défis
+                    réels de l'agriculture et de l'urbanisme. Nous ne construisons pas seulement une plateforme
+                    technologique - nous créons un outil qui répond aux besoins urgents de notre planète."
+                </p>
+                <cite data-lang-fr="— L'équipe fondatrice TerraConnect"
+                    data-lang-en="— The TerraConnect founding team">— L'équipe fondatrice TerraConnect</cite>
+            </blockquote>
+
+            <div class="team-stats-badge fade-in-scroll">
+                <div class="stats-badge-item">
+                    <span class="badge-number">16+</span>
+                    <span class="badge-label" data-lang-fr="Années d'expérience cumulée"
+                        data-lang-en="Years of combined experience">Années d'expérience cumulée</span>
+                </div>
+                <div class="stats-badge-item">
+                    <span class="badge-number">2</span>
+                    <span class="badge-label" data-lang-fr="Doctorants en cours"
+                        data-lang-en="PhD candidates">Doctorants en cours</span>
+                </div>
+                <div class="stats-badge-item">
+                    <span class="badge-icon">🌍</span>
+                    <span class="badge-label" data-lang-fr="Expertise multi-domaine"
+                        data-lang-en="Multi-domain expertise">Expertise multi-domaine</span>
+                </div>
+                <div class="stats-badge-item">
+                    <span class="badge-icon">💡</span>
+                    <span class="badge-label" data-lang-fr="Vision partagée : Impact climat"
+                        data-lang-en="Shared vision: Climate impact">Vision partagée : Impact climat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & CTA Section -->
+    <section id="vision" class="section vision-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Rejoignez-Nous dans Cette Mission"
+                data-lang-en="Join Us in This Mission">Rejoignez-Nous dans Cette Mission</h2>
+
+            <div class="vision-statement fade-in-scroll">
+                <p data-lang-fr="Nous croyons que face à l'urgence climatique, l'accès à l'information géospatiale ne devrait pas être un privilège réservé aux experts. Chaque agriculteur devrait pouvoir optimiser son irrigation, chaque maire devrait pouvoir anticiper les risques, chaque pompier devrait savoir où intervenir en priorité."
+                    data-lang-en="We believe that in the face of climate emergency, access to geospatial information should not be a privilege reserved for experts. Every farmer should be able to optimize irrigation, every mayor should be able to anticipate risks, every firefighter should know where to intervene as a priority.">
+                    Nous croyons que face à l'urgence climatique, l'accès à l'information géospatiale ne devrait pas
+                    être un privilège réservé aux experts. Chaque agriculteur devrait pouvoir optimiser son irrigation,
+                    chaque maire devrait pouvoir anticiper les risques, chaque pompier devrait savoir où intervenir en
+                    priorité.
+                </p>
+                <p data-lang-fr="TerraConnect transforme cette vision en réalité. Nous sommes en train de construire une plateforme qui démocratise l'intelligence spatiale, une question simple à la fois."
+                    data-lang-en="TerraConnect transforms this vision into reality. We are building a platform that democratizes spatial intelligence, one simple question at a time.">
+                    TerraConnect transforme cette vision en réalité. Nous sommes en train de construire une plateforme
+                    qui démocratise l'intelligence spatiale, une question simple à la fois.
+                </p>
+            </div>
+
+            <div class="current-stage fade-in-scroll">
+                <h3 data-lang-fr="📍 Où nous en sommes" data-lang-en="📍 Where we are">📍 Où nous en sommes</h3>
+                <ul>
+                    <li data-lang-fr="Projet en développement actif" data-lang-en="Project in active development">Projet
+                        en développement actif</li>
+                    <li data-lang-fr="Architecture technique en cours de finalisation"
+                        data-lang-en="Technical architecture being finalized">Architecture technique en cours de
+                        finalisation</li>
+                    <li data-lang-fr="Recherche de partenaires et investisseurs"
+                        data-lang-en="Seeking partners and investors">Recherche de partenaires et investisseurs</li>
+                    <li data-lang-fr="Déploiement pilote prévu 2026" data-lang-en="Pilot deployment planned for 2026">
+                        Déploiement pilote prévu 2026</li>
+                </ul>
+            </div>
+
+            <div class="seeking-section fade-in-scroll">
+                <h3 data-lang-fr="Qui nous recherchons" data-lang-en="Who we're looking for">Qui nous recherchons</h3>
+
+                <div class="seeking-grid">
+                    <div class="seeking-card">
+                        <div class="seeking-icon">🤝</div>
+                        <h4 data-lang-fr="Partenaires" data-lang-en="Partners">Partenaires</h4>
+                        <ul>
+                            <li data-lang-fr="Municipalités pour déploiements pilotes"
+                                data-lang-en="Municipalities for pilot deployments">Municipalités pour déploiements
+                                pilotes</li>
+                            <li data-lang-fr="Coopératives agricoles" data-lang-en="Agricultural cooperatives">
+                                Coopératives agricoles</li>
+                            <li data-lang-fr="Acteurs de la donnée satellite" data-lang-en="Satellite data providers">
+                                Acteurs de la donnée satellite</li>
+                        </ul>
+                    </div>
+
+                    <div class="seeking-card">
+                        <div class="seeking-icon">💼</div>
+                        <h4 data-lang-fr="Investisseurs" data-lang-en="Investors">Investisseurs</h4>
+                        <ul>
+                            <li data-lang-fr="Fonds d'impact climatique" data-lang-en="Climate impact funds">Fonds
+                                d'impact climatique</li>
+                            <li data-lang-fr="Business angels secteur AgriTech/ClimateTech"
+                                data-lang-en="AgriTech/ClimateTech business angels">Business angels secteur
+                                AgriTech/ClimateTech</li>
+                            <li data-lang-fr="Venture capital early-stage" data-lang-en="Early-stage venture capital">
+                                Venture capital early-stage</li>
+                        </ul>
+                    </div>
+
+                    <div class="seeking-card">
+                        <div class="seeking-icon">👥</div>
+                        <h4 data-lang-fr="Talents" data-lang-en="Talents">Talents</h4>
+                        <ul>
+                            <li data-lang-fr="Experts IA et Computer Vision"
+                                data-lang-en="AI and Computer Vision experts">Experts IA et Computer Vision</li>
+                            <li data-lang-fr="Développeurs passionnés" data-lang-en="Passionate developers">Développeurs
+                                passionnés</li>
+                            <li data-lang-fr="Spécialistes géospatiaux" data-lang-en="Geospatial specialists">
+                                Spécialistes géospatiaux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-cta fade-in-scroll">
+                <div class="cta-buttons-final" id="contact">
+                    <a href="mailto:contact@terraconnect.ai" class="btn btn-primary-large">
+                        📧 <span data-lang-fr="Nous Contacter" data-lang-en="Contact Us">Nous Contacter</span>
+                    </a>
+                    <a href="#" class="btn btn-secondary-large" id="downloadPresentation">
+                        📄 <span data-lang-fr="Télécharger la Présentation"
+                            data-lang-en="Download Presentation">Télécharger la Présentation</span>
+                    </a>
+                    <a href="mailto:invest@terraconnect.ai" class="btn btn-tertiary-large">
+                        💼 <span data-lang-fr="Opportunités d'Investissement"
+                            data-lang-en="Investment Opportunities">Opportunités d'Investissement</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-fr="Contactez-Nous" data-lang-en="Contact Us">Contactez-Nous</h2>
+            <p class="section-subtitle"
+                data-lang-fr="Vous avez une question ou souhaitez en savoir plus ? Envoyez-nous un message !"
+                data-lang-en="Have a question or want to learn more? Send us a message!">
+                Vous avez une question ou souhaitez en savoir plus ? Envoyez-nous un message !
+            </p>
+
+            <div class="contact-container">
+                <form class="contact-form" action="https://formspree.io/f/xvzbzwnp" method="POST">
+                    <!-- Hidden fields for FormSpree configuration -->
+                    <input type="hidden" name="_next" value="index.html#contact">
+                    <input type="hidden" name="_subject" value="New Contact from TerraConnect Website">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-group">
+                        <label for="name" data-lang-fr="Nom complet *" data-lang-en="Full Name *">Nom complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-lang-fr="Email *" data-lang-en="Email *">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="jean.dupont@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-lang-fr="Sujet *" data-lang-en="Subject *">Sujet *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" data-lang-fr="Sélectionnez un sujet" data-lang-en="Select a subject">
+                                Sélectionnez un sujet</option>
+                            <option value="general" data-lang-fr="Question Générale" data-lang-en="General Inquiry">
+                                Question Générale</option>
+                            <option value="partnership" data-lang-fr="Partenariat" data-lang-en="Partnership">
+                                Partenariat</option>
+                            <option value="investment" data-lang-fr="Investissement" data-lang-en="Investment">
+                                Investissement</option>
+                            <option value="demo" data-lang-fr="Demande de Démonstration" data-lang-en="Demo Request">
+                                Demande de Démonstration</option>
+                            <option value="other" data-lang-fr="Autre" data-lang-en="Other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-lang-fr="Message *" data-lang-en="Message *">Message *</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Votre message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-primary-large">
+                        <span data-lang-fr="Envoyer le Message" data-lang-en="Send Message">Envoyer le Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Popup Modal -->
+    <div id="popupModal" class="popup-overlay">
+        <div class="popup-box">
+            <span class="popup-icon" id="popupIcon"></span>
+            <p class="popup-message" id="popupMessage"></p>
+            <button class="popup-close btn btn-primary" id="popupClose">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">🌍 TerraConnect</span>
+                    <p data-lang-fr="Intelligence Géospatiale Accessible"
+                        data-lang-en="Accessible Geospatial Intelligence">Intelligence Géospatiale Accessible</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 TerraConnect - Intelligence Géospatiale Accessible</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
