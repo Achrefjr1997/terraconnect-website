@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test - Section Styling</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Test to ensure basic styles work */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .test-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            z-index: 10000;
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test-info">
+        <h3>CSS Test Page</h3>
+        <p>If you see decorative bars, diamond icons, and wave dividers, the CSS is working!</p>
+        <p><strong>Look for:</strong></p>
+        <ul>
+            <li>◆ Diamond above titles</li>
+            <li>Gradient colored bar at section top</li>
+            <li>Wave-shaped transitions</li>
+            <li>Colored backgrounds</li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">HERO SECTION</h1>
+            <p class="hero-subtitle">Dark blue gradient background</p>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section problem-section">
+        <div class="container">
+            <h2 class="section-title">PROBLEM SECTION</h2>
+            <p style="text-align: center; color: #666;">Light gray background (#F5F7FA)</p>
+            <p style="text-align: center; margin-top: 20px;">You should see:</p>
+            <ul style="text-align: center; list-style: none; color: #0066FF;">
+                <li>✓ Diamond icon ◆ above this title</li>
+                <li>✓ Gradient colored horizontal bar at top of section</li>
+                <li>✓ Underline below section title</li>
+                <li>✓ Wave divider between Hero and this section</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section solution-section">
+        <div class="container">
+            <h2 class="section-title">SOLUTION SECTION</h2>
+            <p style="text-align: center; color: #666;">White background (#FFFFFF)</p>
+            <p style="text-align: center; margin-top: 20px;">You should see:</p>
+            <ul style="text-align: center; list-style: none; color: #00C853;">
+                <li>✓ Same decorative elements as Problem section</li>
+                <li>✓ Wave divider (opposite direction) from Problem section</li>
+                <li>✓ Clear color change from gray to white</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="usecases" class="section usecases-section">
+        <div class="container">
+            <h2 class="section-title">USE CASES SECTION</h2>
+            <p style="text-align: center; color: #666;">Back to light gray background</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

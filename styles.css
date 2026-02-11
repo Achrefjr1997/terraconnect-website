@@ -109,6 +109,43 @@ img {
 
 .section {
     padding: var(--spacing-xl) 0;
+    padding-top: calc(var(--spacing-xl) + 60px);
+    /* Extra space for wave divider and decorative bar */
+    position: relative;
+}
+
+/* Section Divider - Visual separator between sections */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    /* Position below the wave divider */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 2px;
+    z-index: 10;
+    /* Above wave divider */
+}
+
+/* Decorative section transition */
+.section::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--color-primary-light) 20%,
+            var(--color-secondary) 50%,
+            var(--color-primary-light) 80%,
+            transparent 100%);
+    opacity: 0.3;
+    z-index: 5;
 }
 
 .section-title {
@@ -119,6 +156,34 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: relative;
+    padding-bottom: var(--spacing-md);
+}
+
+/* Decorative underline for section titles */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 2px;
+}
+
+/* Icon decoration before section titles */
+.section-title::before {
+    content: '◆';
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.8;
+    /* More visible */
+    text-shadow: 0 2px 4px rgba(0, 200, 83, 0.3);
+    /* Add subtle glow */
 }
 
 .section-subtitle {
@@ -404,6 +469,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .problem-section {
     background: var(--color-background-alt);
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of problem section */
+.problem-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--color-background-alt);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .problem-grid {
@@ -475,6 +556,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .solution-section {
     background: white;
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of solution section */
+.solution-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .solution-flow {
@@ -616,6 +713,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .usecases-section {
     background: var(--color-background-alt);
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of usecases section */
+.usecases-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--color-background-alt);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .usecases-grid {
@@ -733,6 +846,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .impact-section {
     background: white;
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of impact section */
+.impact-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .impact-grid {
@@ -806,6 +935,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .team-section {
     background: var(--color-background-alt);
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of team section */
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--color-background-alt);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .team-grid {
@@ -1042,6 +1187,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .vision-section {
     background: white;
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of vision section */
+.vision-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: white;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .vision-statement {
@@ -1149,6 +1310,22 @@ img {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .contact-section {
     background: var(--color-background-alt);
+    position: relative;
+    margin-top: var(--spacing-lg);
+}
+
+/* Wave divider at top of contact section */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--color-background-alt);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    /* Behind decorative bar */
 }
 
 .contact-container {
